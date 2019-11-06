@@ -1,0 +1,28 @@
+<div>
+    <table class="table table-bordered table-striped mb-0 container">
+        <thead class="thead-dark">
+          <tr>
+            
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">precio</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let plato of platos">
+            
+            <td>{{plato.idplato}}</td>
+            <td>{{plato.nombre}}</td>
+            <td>{{plato.precio}}</td>
+            
+            
+            <td>
+              <button (click)="editar(plato)" class="btn btn-warning">Editar</button>
+              <button  class="btn btn-danger">eliminar</button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>

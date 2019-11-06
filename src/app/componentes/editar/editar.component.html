@@ -1,0 +1,15 @@
+<form class="container">
+  <div class="form-group">
+    <label>id</label>
+    <input [(ngModel)]="platos.idplato" type="text" class="form-control" name="nombre" readonly>
+  </div>
+  <div class="form-group">
+    <label>nombre</label>
+    <input [(ngModel)]="platos.nombre" type="text" class="form-control" name="nombre">
+  </div>
+  <div class="form-group">
+    <label for="precio">Precio plato</label>
+    <input [(ngModel)]="platos.precio" type="number" class="form-control" name="precio">
+  </div>
+  <button type="submit" (click)="actualizar(platos)" class="btn btn-primary">ingresar</button>
+</form>

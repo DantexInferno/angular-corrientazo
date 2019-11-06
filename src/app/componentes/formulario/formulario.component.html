@@ -1,0 +1,11 @@
+<form class="container">
+    <div class="form-group">
+      <label >nombre</label>
+      <input [(ngModel)]="plato.nombre" type="text" class="form-control" name="nombre" >
+    </div>
+    <div class="form-group">
+        <label for="precio">Precio plato</label>
+        <input [(ngModel)]="plato.precio" type="number" class="form-control" name="precio" >
+      </div>
+    <button type="submit" (click)="insertar()" class="btn btn-primary">ingresar</button>
+  </form>
